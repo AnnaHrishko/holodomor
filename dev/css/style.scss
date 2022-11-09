@@ -169,13 +169,14 @@ body{
 
 .header{
 	padding-top: 30px;
+	align-items: flex-start;
 	.left{
 		.logo_header:first-of-type{
 			margin-right: 25px;
 		}
 	}
 	.right{
-		align-items: flex-start;
+		align-items: center;
 	}
 }
 
@@ -232,10 +233,6 @@ body{
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
-		.brown_button{
-			width: auto;
-			max-width: 260px;
-		}
 	}
 	.right{
 		width: calc(55% - 60px);
@@ -476,6 +473,8 @@ body{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	box-sizing: content-box;
+	align-items: flex-start;
 	&:last-of-type{
 		margin-right: 0;
 		padding-right: 0;
@@ -1041,6 +1040,53 @@ body{
 	color: red;
 }
 
+.change_language{
+	padding-left: 0;
+	list-style-type: none;
+	border: 1px solid #B8B8B4;
+	border-radius: 100px;
+	.icon_header{
+		border: unset;
+		margin-right: 0;
+		&:last-of-type{
+			display: none;
+		}
+	}
+	&:hover{
+		.icon_header:last-of-type{
+			display: block;
+		}
+	}
+}
+
+.language_has_child {
+	list-style-type: none;
+	border: 1px solid #B8B8B4;
+	border-radius: 100px;
+	width: 58px; 
+	.icon_header{
+
+	}
+	.sub_menu{
+		display: none;
+		list-style-type: none;
+		padding-left: 0;
+		.icon_header{
+			margin-top: -10px;
+		}
+	}
+	&:hover .sub_menu{
+		display: block;
+	}
+	.icon_header{
+		border: unset;
+		margin-right: 0;
+	}
+}
+
+.mfp-bg {
+  background: #b6a58e;
+}
 
 
 

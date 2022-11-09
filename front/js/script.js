@@ -10,12 +10,6 @@ $('.search_box').hover(function(){
 });
 
 
-$('.nav_menu .nav_page').click(function(){
-     $('.nav_menu .nav_page').removeClass('active')
-     $(this).toggleClass('active')
-     return false
-})
-
 $(document).ready(function(){
   var $owl = $('.flex_prsnl_card');
 
@@ -37,6 +31,10 @@ $owl.owlCarousel({
     responsiveClass:true,
    // navText: ['<img src="img/Left.svg">', '<img src="img/Right.svg">'],
     responsive:{
+        100:{
+            items:1.5,
+            margin:20
+        },
        400:{
             items:1.5,
             margin:20
@@ -108,4 +106,18 @@ $(function() {
             
         },
     });
+});
+
+
+
+$(function() {
+  $('.popup-modal').magnificPopup({
+    type: 'inline',
+    preloader: false,
+    modal: true
+  });
+  $(document).on('click', '.close_form', function (e) {
+    e.preventDefault();
+    $.magnificPopup.close();
+  });
 });
