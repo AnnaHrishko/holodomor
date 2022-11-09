@@ -1,1 +1,1 @@
-$(".gumb").click(function(){$(this).toggleClass("open"),$(".header .right").toggleClass("active")});
+$(".gumb").click(function(){$(this).toggleClass("open"),$(".header .right").toggleClass("active")}),$(".search_box").hover(function(){$(".nav_menu").hide()},function(){$(".nav_menu").show()}),$(".nav_menu .nav_page").click(function(){return $(".nav_menu .nav_page").removeClass("active"),$(this).toggleClass("active"),!1});

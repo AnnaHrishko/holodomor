@@ -153,10 +153,21 @@
 }
 
 .icon_header {
-  padding: 10px;
+  width: 45px;
+  height: 45px;
   img {
     width: 18px;
     height: 18px;
+  }
+}
+
+.search_box{
+  width: 45px;
+  height: 45px;
+  background-position: 13px center;
+  background-size: 18px;
+  &:hover{
+    width: 340px;
   }
 }
 
@@ -195,11 +206,6 @@
 
 .screen3_index_wrap .left .text_part .text_description {
   margin-bottom: 17px;
-}
-
-.screen3_index_wrap .right {
-  width: calc(60% - 20px);
-  margin-left: 20px;
 }
 
 .screen3_index_wrap .right .top .top_img2 {
@@ -273,10 +279,24 @@
 .description_person .job_title {
   font-size: 15px;
 }
+
+.screen3_index_wrap .left .img_position {
+  width: calc(60% - 50px);
+  margin-left: 50px;
+}
+
+.screen3_index_wrap .right_wrap .img_position {
+  width: calc(60% - 50px);
+  margin-left: 50px;
+}
 }
 
 
 @media screen and (max-width: 991px){
+
+.nav_menu .nav_page a {
+  font-size: 13px;
+}
 
 .screen1_results .right {
   margin-top: -15px;
@@ -302,9 +322,24 @@
   margin-right: 13px;
 }
 
-.icon_header img {
-  width: 14px;
-  height: 14px;
+.icon_header{
+  width: 35px;
+  height: 35px;
+  img {
+    width: 14px;
+    height: 14px;
+  }
+} 
+
+.search_box {
+  width: 35px;
+  height: 35px;
+  background-position: 11px center;
+  background-size: 14px;
+}
+
+.flex_icon {
+  padding-left: 57px;
 }
 
 .card_partner .img_partner {
@@ -386,6 +421,15 @@
 
 @media screen and (max-width: 790px){
 
+.screen1_index_wrap .left .brown_button {
+  max-width: unset;
+}
+
+.main_heading {
+  font-size: 40px;
+  line-height: 48px;
+}
+
 .description_person .job_title {
   font-size: 13px;
 }
@@ -429,11 +473,10 @@
 .screen3_index_wrap{
   display: block;
   .left{
-    width: 100%;
+    display: block;
   }
   .right{
     width: 100%;
-    display: none;
   }
 }
 
@@ -553,27 +596,13 @@
       }
       .top_mobile_header{
         position: relative;
-        .gumb.open{
-          position: absolute;
-          right: -135px;
-          top: 45px;
-          span{
-            transform: rotate(40deg);
-            &:before{
-              display: none;
-            }
-            &:after{
-              transform: rotate(100deg);
-              top: 0;
-            }
-          }
-        }
+        padding: 60px 0;
+        
         .search_box.mobile{
           display: block;
           width: 390px;
-          margin-top: 80px;
+          position: static;
           margin-right: 0;
-          margin-bottom: 105px;
           span{
             color: #333333;
           }
@@ -593,6 +622,27 @@
           }
         }
       }
+  }
+}
+
+.flex_icon {
+  padding-left: 0;
+}
+
+.gumb.open{
+  position: fixed;
+  right: 30px;
+  top: 35px;
+  z-index: 40;
+  span{
+    transform: rotate(40deg);
+    &:before{
+      display: none;
+    }
+    &:after{
+      transform: rotate(100deg);
+      top: 0;
+    }
   }
 }
 
@@ -760,6 +810,71 @@
   display: flex;
   flex-direction: column-reverse;
   padding-bottom: 0;
+}
+
+.screen3_index_wrap .left .img_position {
+  width: 100%;
+  margin-left: 0;
+  height: 100vw;
+  max-height: 500px;
+}
+
+.screen3_index_wrap .left .text_part {
+  width: 100%;
+}
+
+.screen3_index_wrap .right_wrap{
+  flex-direction: column-reverse;
+  margin-bottom: 30px;
+    .img_position {
+      width: 100%;
+      margin-left: 0;
+      height: 57vw;
+      max-height: 400px;
+     // margin-bottom: 40px;
+      .bottom_img2 {
+        position: absolute;
+        right: 0;
+        top: 17%;
+        width: 55%;
+        z-index: 1;
+      }
+      .bottom_img1 {
+        position: absolute;
+        left: 17%;
+        top: 35%;
+        width: 34%;
+        z-index: 2;
+      }
+      .bottom_img3 {
+        position: absolute;
+        left: 0%;
+        width: 24%;
+        z-index: 1;
+        top: 27%;
+      }
+  }
+}
+
+.screen3_index_wrap .right_wrap .text_part {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.popup {
+  width: calc(100% + 30px);
+  padding: 23px 14px 83px;
+  position: relative;
+  margin-left: -15px;
+}
+
+.input_div .input {
+  font-size: 13px;
+}
+
+.popup .close_form {
+  right: 16px;
+  top: 16px;
 }
 }
 
