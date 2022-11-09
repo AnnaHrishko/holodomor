@@ -1,1 +1,1 @@
-$(".gumb").click(function(){$(".header .right").toggleClass("active")});
+$(".gumb").click(function(){$(this).toggleClass("open"),$(".header .right").toggleClass("active")});

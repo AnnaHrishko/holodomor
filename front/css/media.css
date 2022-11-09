@@ -170,6 +170,42 @@
   .screen1_results {
     padding-top: 30px;
   }
+  .screen_about_wrap .bcg_textpart {
+    padding: 18px 20px;
+  }
+  .screen1_about .right {
+    margin-top: -40px;
+  }
+  .screen1_about {
+    padding-top: 30px;
+  }
+  .screen2_results {
+    padding-top: 0;
+  }
+  .screen1_results .left .heading span {
+    font-size: 95px;
+    line-height: 80px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .description_person {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .description_person .job_description {
+    display: none;
+  }
+  .job_description.mobile {
+    display: block;
+  }
+  .description_person h3 {
+    font-size: 25px;
+    line-height: 24px;
+  }
+  .description_person .job_title {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 991px) {
   .screen1_results .right {
@@ -219,6 +255,18 @@
   .screen2_results .right .event_descr {
     margin-bottom: 5px;
   }
+  .screen1_about {
+    padding-top: 11px;
+    align-items: center;
+  }
+  .screen1_about .right {
+    margin-top: 0px;
+    align-items: center;
+  }
+  .screen3_about .right .top img {
+    width: calc(50% - 20px);
+    margin-right: 20px;
+  }
 }
 @media screen and (max-width: 890px) {
   .logo_header {
@@ -245,6 +293,13 @@
   }
 }
 @media screen and (max-width: 790px) {
+  .description_person .job_title {
+    font-size: 13px;
+  }
+  .description_person h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
   .screen1_index_wrap {
     display: block;
   }
@@ -354,13 +409,15 @@
   .pr_policy {
     margin: 0 auto;
   }
+  .header .right .top_mobile_header .gumb {
+    display: block;
+  }
   .header {
     align-items: center;
   }
   .header .right {
     display: none;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     background-color: #ebe2d5;
     position: fixed;
@@ -369,6 +426,7 @@
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 10;
   }
   .header .right .nav_menu {
     display: block;
@@ -520,8 +578,40 @@
   .bcg_textpart {
     padding: 15px 13px;
   }
+  .screen1_about {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 0;
+  }
+  .screen1_about .heading.mobile {
+    display: block;
+  }
+  .screen1_about .right {
+    margin-top: 0;
+    padding-bottom: 35px;
+  }
+  .screen1_about .left .heading {
+    display: none;
+  }
+  .screen3_about {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 0;
+  }
   .screen3_about .right .top img {
     width: calc(50% - 15px);
     margin-right: 15px;
+  }
+  .screen_about_wrap .bcg_textpart {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+  }
+  .screen_about_wrap .left .img_spikelets {
+    display: none;
+  }
+  .screen5_about {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 0;
   }
 }
