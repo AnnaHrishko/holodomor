@@ -424,7 +424,11 @@ body {
 .screen5_index .spikelets_grey {
   position: absolute;
   right: -15px;
-  top: -40px;
+  top: -70px;
+}
+
+.screen5_contect_inner {
+  position: relative;
 }
 
 .age_person {
@@ -584,16 +588,85 @@ body {
 }
 
 .flex_prsnl_card {
-  overflow-x: scroll;
-  width: 100%;
+  padding-left: 50px;
+  position: relative;
 }
 .flex_prsnl_card .personal_card {
-  width: 30%;
-  margin-right: 20px;
-  flex: 0 0 auto;
+  width: 100%;
 }
 .flex_prsnl_card .personal_card img {
   width: 100%;
+  margin-bottom: 20px;
+}
+
+.number_counter {
+  position: absolute;
+  bottom: 0;
+  right: 125px;
+}
+
+.owl-nav {
+  top: -70px;
+  position: absolute;
+  right: 50px;
+  display: flex;
+}
+
+.owl-prev {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(41, 40, 39, 0.2) !important;
+  border-radius: 50%;
+  position: relative !important;
+  margin-right: 75px;
+}
+.owl-prev:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/arrow_left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9px;
+  width: 100%;
+  height: 100%;
+}
+.owl-prev span {
+  width: 0 !important;
+  opacity: 0;
+}
+
+.owl-next {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(41, 40, 39, 0.2) !important;
+  border-radius: 50%;
+  position: relative !important;
+}
+.owl-next:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../img/arrow_right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9px;
+  width: 100%;
+  height: 100%;
+}
+.owl-next span {
+  width: 0 !important;
+  opacity: 0;
 }
 
 .bottom_info_site {
@@ -895,4 +968,22 @@ body {
 }
 .input_div:last-of-type {
   margin-bottom: 20px;
+}
+
+.screen5_index_wrap .top {
+  width: 70%;
+  align-items: flex-end;
+}
+.screen5_index_wrap .top .heading {
+  font-size: 35px;
+  margin-right: 10px;
+}
+
+.screen5_index {
+  overflow: hidden;
+}
+
+.error {
+  font-size: 13px;
+  color: red;
 }
