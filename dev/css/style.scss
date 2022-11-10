@@ -466,8 +466,8 @@ body{
 }
 
 .card_partner{
-	width: calc(25% - 50px);
-	padding-right: 50px;
+	width: calc(25% - 20px);
+	padding-right: 20px;
 	border-right: 1px solid #EBE2D5;
 	margin-right: 50px;
 	display: flex;
@@ -1040,34 +1040,18 @@ body{
 	color: red;
 }
 
-.change_language{
-	padding-left: 0;
-	list-style-type: none;
-	border: 1px solid #B8B8B4;
-	border-radius: 100px;
-	.icon_header{
-		border: unset;
-		margin-right: 0;
-		&:last-of-type{
-			display: none;
-		}
-	}
-	&:hover{
-		.icon_header:last-of-type{
-			display: block;
-		}
-	}
-}
-
 .language_has_child {
 	list-style-type: none;
 	border: 1px solid #B8B8B4;
 	border-radius: 100px;
 	width: 58px; 
+	position: relative;
 	.icon_header{
-
+		border: unset;
 	}
 	.sub_menu{
+		position: absolute;
+		top: 100%;
 		display: none;
 		list-style-type: none;
 		padding-left: 0;
@@ -1075,13 +1059,16 @@ body{
 			margin-top: -10px;
 		}
 	}
-	&:hover .sub_menu{
-		display: block;
-	}
-	.icon_header{
-		border: unset;
-		margin-right: 0;
-	}
+	&:hover{
+		height: 100%;
+		.sub_menu{
+			display: block;
+			.icon_header{
+				border: unset;
+				margin-right: 0;
+			}
+		}
+	} 
 }
 
 .mfp-bg {

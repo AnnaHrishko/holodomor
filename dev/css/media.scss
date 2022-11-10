@@ -373,6 +373,7 @@
   width: calc(50% - 20px);
   padding-right: 20px;
   margin-right: 20px;
+  box-sizing: unset;
   &:nth-child(even){
     border-right: unset;
     padding-right: unset;
@@ -439,8 +440,18 @@
 
 @media screen and (max-width: 790px){
 
+
+
+.search_box{
+
+}
+
 .language_has_child {
   width: 56px;
+  .sub_menu{
+    position: absolute;
+    top: -25px;
+  }
 }
 
 .table_with_button{
@@ -674,15 +685,21 @@
       }
       .top_mobile_header{
         position: relative;
-        padding: 60px 0;
+        padding: 90px 0;
         
         .search_box.mobile{
+          background-size: 23px;
           display: block;
           width: 390px;
+          height: 56px;
           position: static;
           margin-right: 0;
           span{
             color: #333333;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 23px;
+            letter-spacing: 0.04em;
           }
         }
       }
@@ -709,14 +726,18 @@
   }
 }
 
+.nav_menu{
+  display: block!important;
+}
+
 .flex_icon {
   padding-left: 0;
 }
 
 .gumb.open{
   position: fixed;
-  right: 30px;
-  top: 35px;
+  right: 20px;
+  top: 55px;
   z-index: 40;
   span{
     transform: rotate(40deg);

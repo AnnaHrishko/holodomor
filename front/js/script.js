@@ -3,11 +3,16 @@
       $('.header .right').toggleClass('active')
 });
 
-$('.search_box').hover(function(){
-     $('.nav_menu').hide()
-},function(){
-     $('.nav_menu').show()
-});
+
+    $('.search_box').hover(function(){
+        $('.nav_menu').hide()
+        },function(){
+        $('.nav_menu').show()
+    });
+
+
+
+
 
 
 $(document).ready(function(){
